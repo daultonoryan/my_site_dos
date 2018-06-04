@@ -1,0 +1,117 @@
+.section-blue{
+    width: 100%;
+    padding: 5% 0;
+    background: #107896;
+    height: auto;
+    color: #FFFFFF;
+}
+
+.section-white{
+    width: 100%;
+    padding: 5% 0;
+    background: #FFFFFF;
+}
+
+#cover-photo{
+    background: url("/static/coverPhoto.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#cover-text{
+    color: #c0362c;
+    font-size: 72pt;
+}
+
+#cover-subtext{
+    font-size: 48pt;
+    color: #c0362c;
+}
+
+.col{
+    text-align: center;
+}
+
+.section-head{
+    font-size: 36pt;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.project-img {
+  margin-right: 2%;
+  margin-left: 2%;
+  padding-bottom: 62.5%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-img-text{
+    margin-top: 15px;
+    font-size: 16pt;
+}
+
+#about-text-hold{
+    padding:15px;
+    font-size: 16pt;
+}
+
+.experience{
+    list-style: none;
+}
+
+.experience-title{
+    font-size: 20pt;
+    padding: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.experience-institution{
+    font-size: 18pt;
+    padding: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.experience-dates{
+    padding: 0 0 5px 0;
+    color: #808080;
+    font-weight: lighter;
+}
+
+.synopsis{
+    margin: 0 0 5px 0;
+}
+
+body{
+    color: darkslateblue;
+}
+
+#contact-list{
+    list-style-type: none;
+    font-size: 20pt;
+}
+
+#info-list{
+    list-style-type: none;
+    font-size: 20pt;
+}
+
+#about-section {
+    padding: 15px;
+    background-color: #ffffff;
+    color: #093145;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.section-list-el{
+  margin: 0 0 10px 0;
+}

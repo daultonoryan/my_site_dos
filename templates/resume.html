@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Daulton Sink</title>
+    <link href="{% static 'resume.css' %}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    {{ navbar }}
+    <div id="main-image-hold">
+        <div id="title">DAULTON SINK</div>
+        <div id="subtitle">A Django Powered Resume</div>
+    </div>
+    <div id="about-section">
+      <hr>
+      <div id="about_text_hold">
+        <p>Hello! This is my personal site and resume, a (near) exhaustive rundown of all the projects I have worked on and all the interests that have captivated my attention at one time or another. Studying biology in college, I realized eventually that my real passion lay in computer science.</p>
+        <p>I graduated from VCU in 2016, and not long after that, I set out to teach myself how to code. Since then, I have amassed a strong base of knowledge, having mastered multiple core concepts and languages. The language that I get most excited about? That’s easy: Python! This language is highly readable, infinitely flexible, and quickly adapted to a huge number of applications.</p>
+        <p>For this site specifically, I used HTML and CSS on the frontend and Python’s Django library on the backend. Designed to take advantage of most of the stunning features Django has to offer, I have taken the construction of this site as an opportunity to practice and display good coding practices. If you are already falling asleep because you view coding as about as exciting as watching grass grow, fear not, I won’t bore you any further. If however, you view coding as an exciting and creative topic where you get to create something beautiful from nothing then I fully invite you to check out my source code which can be found <a href="https://github.com/daultonoryan/daultonsink_site">here.</a></p>
+        <p>I’m happy to share my resume with you. If there are any questions I can answer for you or if you are interested in freelance work or hiring for a permanent position, please feel free to reach out to me!</p>
+      </div>
+      <img src="{% static 'dos2.png' %}" alt="headshot image" id="headshot_img">
+      <div id="about_info">
+        <div class="top_left_spacer">
+          <p>General Info</p>
+          <ul id="info_list">
+            <li class="info">Address:</li>
+            <li class="info">712 16th Street SE</li>
+            <li class="info">Washington, DC 20003</li>
+          </ul>
+        </div>
+        <div class="top_left_spacer">
+          <p>Contact me</p>
+          <ul id="contact_list">
+            <li class="contact_head">Email:</li>
+            <li class="contact">Daultonoryan@gmail.com</li>
+            <li class="contact_head">phone:</li>
+            <li class="contact">(202) 733-0715</li>
+            <li class="contact_head">GitHub:</li>
+            <li class="contact">https://github.com/daultonoryan</li>
+          </ul>
+        </div>
+      </div>
+      <hr id="bottom_span">
+    </div>
+    <div class="main-body-hold-blue" id="skills-section">
+      <p class="head">Skills:</p>
+      <ul class="keyword-list">
+      {% for skill in skill_list %}
+        <li class="keyword">{{ skill.skill_name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="main-body-hold-white" id="experience-section">
+      <div class="jobs_holder">
+        <p class="body_head">Experience:</p>
+        {% for job in job_list %}
+          <ul class="job">
+            <li class="job_title">{{ job.position }}</li>
+            <li class="job_company">{{ job.company }}</li>
+            <li class="job_dates">{{ job.start_date }} - {{ job.end_date }}</li>
+            <ul>
+              <li class="job_experiences">{{ job.synopsis1 }}</li>
+              {% if job.synopsis2 %}
+              <li class="job_experiences">{{ job.synopsis2 }}</li>
+              {% endif %}
+              {% if job.synopsis3 %}
+              <li class="job_experiences">{{ job.synopsis3 }}</li>
+              {% endif %}
+              {% if job.synopsis4 %}
+              <li class="job_experiences">{{ job.synopsis4 }}</li>
+              {% endif %}
+              {% if job.synopsis5 %}
+              <li class="job_experiences">{{ job.synopsis5 }}</li>
+              {% endif %}
+            </ul>
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="main-body-hold-blue" id="tools-section">
+        <div class="blue_rotate">
+          <p class="body_head">Software and Tools:</p>
+          <ul class="skills_list">
+              {% for program in software_list %}
+                  <li class="skill">{{ program.skill_name }}</li>
+              {% endfor %}
+          </ul>
+        </div>
+    </div>
+    <div class="main-body-hold-white" id="education-section">
+        <div class="jobs_holder">
+          <p class="body_head">Education:</p>
+            {% for ed in education_list %}
+                <ul class="job">
+                    <li class="job_title">{{ ed.degree }} - {{ ed.school }}</li>
+                    <li class="job_dates">{{ ed.start_date }} - {{ ed.end_date }}</li>
+                    <ul>
+                        <li class="job_experiences">{{ ed.synopsis1 }}</li>
+                        {% if ed.synopsis2 %}
+                            <li class="job_experiences">{{ ed.synopsis2 }}</li>
+                        {% endif %}
+                        {% if ed.synopsis3 %}
+                            <li class="job_experiences">{{ ed.synopsis3 }}</li>
+                        {% endif %}
+                        {% if ed.synopsis4 %}
+                            <li class="job_experiences">{{ ed.synopsis4 }}</li>
+                        {% endif %}
+                        {% if ed.synopsis5 %}
+                            <li class="job_experiences">{{ ed.synopsis5 }}</li>
+                        {% endif %}
+                    </ul>
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+  </body>
+</html>
