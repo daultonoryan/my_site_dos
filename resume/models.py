@@ -50,6 +50,13 @@ class Work(models.Model):
     def __str__(self):
         return self.work_name
 
+class Certification(models.Model):
+    name = models.CharField(max_length=100, blank=True)
+    description = models.CharField(max_length=400, blank=True)
+    url = models.CharField(max_length=100, blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 

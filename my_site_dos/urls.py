@@ -14,9 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path, re_path, include
 from django.shortcuts import render_to_response
 from resume import models
+from rest_framework import routers
+import greenthumb.views
+
+
+router = routers.DefaultRouter()
+router.register(r'sensors', greenthumb.views.SensorViewSet)
+
 
 
 def resume_render(request):
@@ -25,7 +32,8 @@ def resume_render(request):
         "projects": models.Project.objects.all(),
         "tools": models.Tool.objects.all(),
         "employments": models.Work.objects.all(),
-        "educations": models.Eduction.objects.all()
+        "educations": models.Eduction.objects.all(),
+        "certifications": models.Certification.objects.all()
     }
     return render_to_response("resume2.html", d)
 
@@ -34,4 +42,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('daulton_sink_resume/', resume_render),
     path('', resume_render),
+    re_path(r'^', include(router.urls)),
+    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

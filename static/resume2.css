@@ -115,3 +115,33 @@ body{
 .section-list-el{
   margin: 0 0 10px 0;
 }
+
+.popup-trigger{
+    position: relative;
+}
+
+.popup-box{
+    visibility: hidden;
+    background-color: black;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.popup-trigger:hover .popup-box{
+    visibility: visible;
+}
+
+.popup-trigger .popup-box{
+    bottom: 100%;
+    left: 100px;
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

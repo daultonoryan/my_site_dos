@@ -134,5 +134,14 @@
             {% endif %}
         {% endfor %}
     </div>
+
+    <footer class="container-fluid">
+        <p class="section-head">Certifications:</p>
+        <ul>
+            {% for i in certifications %}
+                <li class="popup-trigger"><a href="{{ i.url }}">{{ i.name }}</a><span class="popup-box">{{ i.description }}</span></li>
+            {% endfor %}
+        </ul>
+    </footer>
 </body>
 </html>
