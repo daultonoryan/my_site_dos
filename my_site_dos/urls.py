@@ -14,12 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.http import Http404
 from django.urls import path, re_path, include
 from django.shortcuts import render_to_response
-from resume import models
+from resume.models import Skill, Project, Tool, Work, Eduction, Certification
 from rest_framework import routers
 import greenthumb.views
-
+from greenthumb.models import Sensors
 
 router = routers.DefaultRouter()
 router.register(r'sensors', greenthumb.views.SensorViewSet)
@@ -28,14 +29,23 @@ router.register(r'sensors', greenthumb.views.SensorViewSet)
 
 def resume_render(request):
     d = {
-        "skills": models.Skill.objects.all(),
-        "projects": models.Project.objects.all(),
-        "tools": models.Tool.objects.all(),
-        "employments": models.Work.objects.all(),
-        "educations": models.Eduction.objects.all(),
-        "certifications": models.Certification.objects.all()
+        "skills": Skill.objects.all(),
+        "projects": Project.objects.all(),
+        "tools": Tool.objects.all(),
+        "employments": Work.objects.all(),
+        "educations": Eduction.objects.all(),
+        "certifications": Certification.objects.all()
     }
     return render_to_response("resume2.html", d)
+
+
+def plant_page_render(request, plant_id):
+    valid_urls = Sensors.objects.values_list("unit_id", flat=True)
+    if plant_id in valid_urls:
+        d = {"item": "todo"}
+        return render_to_response("garden_view.html", d)
+    else:
+        raise Http404
 
 
 urlpatterns = [
@@ -43,5 +53,6 @@ urlpatterns = [
     path('daulton_sink_resume/', resume_render),
     path('', resume_render),
     re_path(r'^', include(router.urls)),
-    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    re_path(r"sensors/(\S+)", plant_page_render)
 ]

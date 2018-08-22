@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f869ade-1c5c-4153-bb59-e9c5999f95d1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/greenthumb/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greenthumb/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greenthumb/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greenthumb/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greenthumb/sterilizers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greenthumb/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my_site_dos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_site_dos.iml" afterDir="false" />
+    <list default="true" id="2f869ade-1c5c-4153-bb59-e9c5999f95d1" name="Default" comment="a few cosmetic changes to the resume portion of my site and a new app called greenthumb which will serve as a jumpoff point for my raspberry pi powered plant pot">
+      <change afterPath="$PROJECT_DIR$/templates/garden_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_site_dos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_site_dos/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_site_dos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_site_dos/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/resume/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/resume2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/resume2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/resume2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resume2.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,33 +45,44 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="11" />
+          <entry key="html" value="1" />
+          <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="11" />
+          <entry key="HTML" value="1" />
+          <entry key="Python" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="76" />
+          <entry key="html" value="1" />
+          <entry key="py" value="400" />
+          <entry key="txt" value="168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="76" />
+          <entry key="HTML" value="1" />
+          <entry key="PLAIN_TEXT" value="168" />
+          <entry key="Python" value="400" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.merge" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greenthumb/sterilizers.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my_site_dos/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="355">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -100,18 +99,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/greenthumb/models.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_site_dos/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+            <state relative-caret-position="94">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+              <folding>
+                <element signature="e#635#667#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greenthumb/tests.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/templates/garden_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -121,8 +127,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -133,6 +139,7 @@
       <find>middle</find>
       <find>res</find>
       <find>popu</find>
+      <find>rest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,13 +158,14 @@
         <option value="$PROJECT_DIR$/greenthumb/admin.py" />
         <option value="$PROJECT_DIR$/greenthumb/sterilizers.py" />
         <option value="$PROJECT_DIR$/resume/admin.py" />
-        <option value="$PROJECT_DIR$/my_site_dos/urls.py" />
         <option value="$PROJECT_DIR$/resume/models.py" />
         <option value="$PROJECT_DIR$/templates/resume2.html" />
         <option value="$PROJECT_DIR$/static/resume2.css" />
         <option value="$PROJECT_DIR$/greenthumb/models.py" />
-        <option value="$PROJECT_DIR$/my_site_dos/settings.py" />
         <option value="$PROJECT_DIR$/greenthumb/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/garden_view.html" />
+        <option value="$PROJECT_DIR$/my_site_dos/urls.py" />
+        <option value="$PROJECT_DIR$/my_site_dos/settings.py" />
       </list>
     </option>
   </component>
@@ -319,13 +327,21 @@
       <option name="presentableId" value="Default" />
       <updated>1526508461017</updated>
     </task>
+    <task id="LOCAL-00001" summary="a few cosmetic changes to the resume portion of my site and a new app called greenthumb which will serve as a jumpoff point for my raspberry pi powered plant pot">
+      <created>1534794739610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534794739610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17468214" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17468214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -340,8 +356,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32903227" />
-      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="12" sideWeight="0.6766169" weight="0.26046026" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.3233831" side_tool="true" weight="0.3297414" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Terminal" order="12" sideWeight="0.671089" visible="true" weight="0.26046026" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.328911" side_tool="true" visible="true" weight="0.26046026" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -378,6 +394,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a few cosmetic changes to the resume portion of my site and a new app called greenthumb which will serve as a jumpoff point for my raspberry pi powered plant pot" />
+    <option name="LAST_COMMIT_MESSAGE" value="a few cosmetic changes to the resume portion of my site and a new app called greenthumb which will serve as a jumpoff point for my raspberry pi powered plant pot" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/my_site_dos/__init__.py">
@@ -466,23 +486,6 @@
     <entry file="file://$PROJECT_DIR$/my_site_dos/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_site_dos/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_site_dos/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/greenthumb/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -500,15 +503,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greenthumb/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/greenthumb/sterilizers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenthumb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenthumb/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/greenthumb/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -520,10 +530,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greenthumb/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/garden_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_site_dos/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="e#635#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_site_dos/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
         </state>
       </provider>
     </entry>
