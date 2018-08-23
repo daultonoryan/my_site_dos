@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f869ade-1c5c-4153-bb59-e9c5999f95d1" name="Default" comment="making some branch history changes">
-      <change afterPath="$PROJECT_DIR$/my_site_dos/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2f869ade-1c5c-4153-bb59-e9c5999f95d1" name="Default" comment="making some branch history changes" />
     <ignored path="my_site_dos/settings.py" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,9 +139,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -245,11 +239,6 @@
           <expand>
             <path>
               <item name="my_site_dos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_site_dos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_site_dos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_site_dos" type="462c0819:PsiDirectoryNode" />
               <item name="my_site_dos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -403,14 +392,20 @@
       <option name="project" value="LOCAL" />
       <updated>1535051828961</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="making some branch history changes">
+      <created>1535052804131</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535052804131</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17468214" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17468214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -425,7 +420,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32903227" />
-      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="12" sideWeight="0.89773357" weight="0.26046026" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Terminal" order="12" sideWeight="0.89773357" visible="true" weight="0.26046026" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.102266446" side_tool="true" weight="0.26046026" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -620,9 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
