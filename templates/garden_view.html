@@ -3,15 +3,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="{% static "garden_view.css" %}" rel="stylesheet" type="text/css" />
     <title>{{ item.unit_id }}</title>
 </head>
 <body>
 <main>
-    <img src="{% static item.snapshot.url %}" style="width: 30vw;height: 30vh;">
-    <p>the last known temperature was {{ item.temp }}</p>
-    <p>the last known humidity reading was {{ item.humidity }} </p>
-    <p>the last known soil moisture was {{ item.soil_moisture }}</p>
-    <p>the last known tank moisture was {{ item.soil_moisture }}</p>
+    <img id="plant-img" src="{% static item.snapshot.url %}" style="width: 30vw;height: 30vh;" alt="the most recent img of your plant">
+    <div id="sensor-data">
+        <p>the last known temperature was {{ item.temp }}</p>
+        <p>the last known humidity reading was {{ item.humidity }} </p>
+        <p>the last known soil moisture was {{ item.soil_moisture }}</p>
+        <p>the last known tank moisture was {{ item.water_tank }}</p>
+    </div>
 </main>
 </body>
 </html>

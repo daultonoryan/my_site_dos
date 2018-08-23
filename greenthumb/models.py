@@ -6,6 +6,7 @@ class Sensors (models.Model):
     temp = models.IntegerField(default=20)
     humidity = models.IntegerField(default=24)
     soil_moisture = models.IntegerField(default=200)
+    water_tank = models.IntegerField(default=1)
     light_status = models.BooleanField(default=True)
     created = models.DateField(auto_now_add=True, blank=True)
     snapshot = models.ImageField(upload_to="snapshots", blank=True)
