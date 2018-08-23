@@ -8,4 +8,4 @@ class Sensors (models.Model):
     soil_moisture = models.IntegerField(default=200)
     light_status = models.BooleanField(default=True)
     created = models.DateField(auto_now_add=True, blank=True)
-    snapshot = models.ImageField(upload_to="static/snapshots", blank=True)
+    snapshot = models.ImageField(upload_to="snapshots", blank=True)

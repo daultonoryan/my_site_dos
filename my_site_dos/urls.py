@@ -42,7 +42,7 @@ def resume_render(request):
 def plant_page_render(request, plant_id):
     valid_urls = Sensors.objects.values_list("unit_id", flat=True)
     if plant_id in valid_urls:
-        d = {"item": "todo"}
+        d = {"item": Sensors.objects.filter(unit_id=plant_id).last()}
         return render_to_response("garden_view.html", d)
     else:
         raise Http404

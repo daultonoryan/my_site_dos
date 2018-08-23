@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ item.unit_id }}</title>
 </head>
 <body>
-
+<main>
+    <img src="{% static item.snapshot.url %}" style="width: 30vw;height: 30vh;">
+    <p>the last known temperature was {{ item.temp }}</p>
+    <p>the last known humidity reading was {{ item.humidity }} </p>
+    <p>the last known soil moisture was {{ item.soil_moisture }}</p>
+    <p>the last known tank moisture was {{ item.soil_moisture }}</p>
+</main>
 </body>
 </html>
