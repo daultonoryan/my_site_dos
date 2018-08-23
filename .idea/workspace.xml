@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f869ade-1c5c-4153-bb59-e9c5999f95d1" name="Default" comment="making some branch history changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2f869ade-1c5c-4153-bb59-e9c5999f95d1" name="Default" comment="making some branch history changes" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_site_dos/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            <state relative-caret-position="289">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -130,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/resume/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="31" column="82" lean-forward="true" selection-start-line="31" selection-start-column="82" selection-end-line="37" />
+              <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -243,6 +241,11 @@
           <expand>
             <path>
               <item name="my_site_dos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_site_dos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_site_dos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_site_dos" type="462c0819:PsiDirectoryNode" />
               <item name="my_site_dos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -389,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535051700249</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="making some branch history changes">
+      <created>1535051828961</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535051828961</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,7 +600,7 @@
     <entry file="file://$PROJECT_DIR$/resume/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="31" column="82" lean-forward="true" selection-start-line="31" selection-start-column="82" selection-end-line="37" />
+          <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -629,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_site_dos/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="289">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
         </state>
       </provider>
     </entry>
