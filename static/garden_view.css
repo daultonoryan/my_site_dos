@@ -6,8 +6,16 @@ main{
 #sensor-data{
     text-align: center;
     display: inline-block;
+    margin-right: 50px;
 }
 
 #plant-img{
+
+}
+
+#enviornment-settings{
     display: inline-block;
+    margin-left: 50px;
+    top: 0;
+    position: relative;
 }

@@ -8,12 +8,21 @@
 </head>
 <body>
 <main>
-    <img id="plant-img" src="{% static item.snapshot.url %}" style="width: 30vw;height: 30vh;" alt="the most recent img of your plant">
+    {% if item.snapshot %}
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfGipj-d4cZxW74lE04E4UBZBYqzih7HmGwYQ7JLbdsykQ4EC" style="width: 30vw;height: 30vh;" alt="the most recent img of your plant">
+    {% endif %}
+    <br />
     <div id="sensor-data">
         <p>the last known temperature was {{ item.temp }}</p>
         <p>the last known humidity reading was {{ item.humidity }} </p>
         <p>the last known soil moisture was {{ item.soil_moisture }}</p>
         <p>the last known tank moisture was {{ item.water_tank }}</p>
+    </div>
+    <div id="enviornment-settings">
+        <input type="button" value="Toggle Light">
+        <input type="button" value="Water Now"><br>
+        <label>Hours of Light: <input type="range" min="0" max="24"></label><br>
+        <label>Daily Water Volume(ml): <input type="range", min="0", max="500"></label>
     </div>
 </main>
 </body>
