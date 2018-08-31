@@ -9,4 +9,3 @@ class Sensors (models.Model):
     water_tank = models.IntegerField(default=1)
     light_status = models.BooleanField(default=True)
     created = models.DateField(auto_now_add=True, blank=True)
-    snapshot = models.ImageField(upload_to="snapshots", blank=True)
