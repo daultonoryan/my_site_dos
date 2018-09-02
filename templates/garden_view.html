@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <link href="{% static "garden_view.css" %}" rel="stylesheet" type="text/css" />
     <title>{{ item.unit_id }}</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
 <main>
-    {% if item.snapshot %}
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfGipj-d4cZxW74lE04E4UBZBYqzih7HmGwYQ7JLbdsykQ4EC" style="width: 30vw;height: 30vh;" alt="the most recent img of your plant">
-    {% endif %}
+    <img src="https://www.publicdomainpictures.net/pictures/50000/velka/plant-1372238721hPX.jpg" style="width: 30vw;height: 30vh;" alt="the most recent img of your plant">
     <br />
     <div id="sensor-data">
         <p>the last known temperature was {{ item.temp }}</p>
@@ -21,7 +22,7 @@
     <div id="enviornment-settings">
         <input type="button" value="Toggle Light">
         <input type="button" value="Water Now"><br>
-        <label>Hours of Light: <input type="range" min="0" max="24"></label><br>
+        <label>Hours of Light: <input type="range" min="0" max="24" data-show-value="true" name="light"></label><br>
         <label>Daily Water Volume(ml): <input type="range", min="0", max="500"></label>
     </div>
 </main>

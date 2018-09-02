@@ -10,6 +10,3 @@ class SensorViewSet(viewsets.ModelViewSet):
     queryset = Sensors.objects.all()
     serializer_class = SensorSerializer
 
-
-
-

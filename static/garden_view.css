@@ -19,3 +19,7 @@ main{
     top: 0;
     position: relative;
 }
+
+#sensor-data{
+    font-size: 30px;
+}
