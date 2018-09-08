@@ -24,6 +24,7 @@ from greenthumb.models import Sensors
 
 router = routers.DefaultRouter()
 router.register(r'sensors', greenthumb.views.SensorViewSet)
+router.register(r"outputs", greenthumb.views.OutputViewSet)
 
 
 
