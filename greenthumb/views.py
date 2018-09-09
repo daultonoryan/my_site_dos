@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import Sensors, Outputs
-from .sterilizers import SensorSerializer, OutputSerializer
+from .sterilizers import SensorSerializer
 from django.http import HttpResponse
 
 
@@ -10,10 +10,6 @@ from django.http import HttpResponse
 class SensorViewSet(viewsets.ModelViewSet):
     queryset = Sensors.objects.all()
     serializer_class = SensorSerializer
-
-class OutputViewSet(viewsets.ModelViewSet):
-    queryset = Outputs.objects.all()
-    serializer_class = OutputSerializer
 
 
 def change_outputs(request):
