@@ -22,10 +22,10 @@ from rest_framework import routers
 import greenthumb.views
 from greenthumb.models import Sensors
 
+
 router = routers.DefaultRouter()
 router.register(r'sensors', greenthumb.views.SensorViewSet)
 router.register(r"outputs", greenthumb.views.OutputViewSet)
-
 
 
 def resume_render(request):
@@ -55,5 +55,6 @@ urlpatterns = [
     path('', resume_render),
     re_path(r'^', include(router.urls)),
     re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    re_path(r"sensors/(\S+)", plant_page_render)
+    re_path(r'^sensors/ajax/save_outputs/$', greenthumb.views.change_outputs),
+    re_path(r"sensors/(\S+)", plant_page_render),
 ]

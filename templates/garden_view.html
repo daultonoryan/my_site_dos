@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src={% static "jquery-3.3.1.js" %}></script>
+    <script src={% static "garden_ajax.js" %}></script>
 </head>
 <body>
 <main>
@@ -20,10 +22,11 @@
         <p>the last known tank moisture was {{ item.water_tank }}</p>
     </div>
     <div id="enviornment-settings">
-        <label>Ideal Humidity: <input type="range" min="40" max="80" name="humidity"></label><br>
-        <label>Ideal Temp: <input type="range" min="18" max="40" name="temp"></label><br>
-        <label>Hours of Light: <input type="range" min="0" max="24" name="light"></label><br>
-        <label>Daily Water Volume(ml): <input type="range" min="0" max="500" name="water"></label>
+        <label>Ideal Humidity: <input id="humidity" type="range" min="40" max="80" name="humidity"></label><br>
+        <label>Ideal Temp: <input id="temp" type="range" min="18" max="40" name="temp"></label><br>
+        <label>Hours of Light: <input id="light" type="range" min="0" max="24" name="light"></label><br>
+        <label>Daily Water Volume(ml): <input id="water" type="range" min="0" max="500" name="water"></label>
+        <input type="button" value="Save" id="save-settings">
     </div>
 </main>
 </body>
