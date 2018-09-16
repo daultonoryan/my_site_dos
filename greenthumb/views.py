@@ -1,15 +1,18 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import Sensors, Outputs
-from .sterilizers import SensorSerializer
+from .sterilizers import SensorSerializer, OutputsSerializer
 from django.http import HttpResponse
-
 
 # Create your views here.
 
 class SensorViewSet(viewsets.ModelViewSet):
     queryset = Sensors.objects.all()
     serializer_class = SensorSerializer
+
+class OutputViewSet(viewsets.ModelViewSet):
+    queryset = Outputs.objects.all()
+    serializer_class = OutputsSerializer
 
 
 def change_outputs(request):
